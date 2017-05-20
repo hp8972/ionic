@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+  <ion-side-menus>
+  <!--侧边栏-->
+  	<ion-side-menu style="background: url(http://file32.mafengwo.net/M00/60/1F/wKgBs1c4hnuAGhROAAtN68umi5w46.groupinfo.w680.jpeg);background-size: cover;">
+  		<ion-header-bar style="background: #33CD5F;">
+  		<h1 class="title">我是侧边栏哦~</h1>
+  		
+  		</ion-header-bar>
+  		<ion-content>
+  			<ion-list>
+  				<ion-item style="background: none;color: #fff;">
+  					<!--menu-close下面是一个在导航栏内链接的例子。点击此链接会自动打开指定的侧栏菜单。-->
+  					<a menu-close  class=" item-icon-left item-icon-right" href="#/" style="color: #fff;"><i class="icon ion-edit"></i>边走边记<i class="icon ion-ios-arrow-thin-right"></i></a>
+  				</ion-item>
+  			<ion-item style="background: none;color: #fff;">
+  					<a menu-close  class=" item-icon-left item-icon-right" href="#/find" style="color: #fff;"><i class="icon ion-android-subway"></i>沿途美景<i class="icon ion-ios-arrow-thin-right"></i></a>
+  				</ion-item>
+  				<ion-item style="background: none;color: #fff;">
+  					<a menu-close  class=" item-icon-left item-icon-right" href="#/trip1" style="color: #fff;"><i class="icon ion-leaf"></i>水上乐园<i class="icon ion-ios-arrow-thin-right"></i></a>
+  				</ion-item>
+  			</ion-list>
+  		</ion-content>
+  		
+  		
+  		
+  		
+  	</ion-side-menu>
+  	
+  	<!--正文-->
+  	<ion-side-menu-content drag-content="false">
+  	<!--是否可以拖拽-->
+  	<!--设置顶部-->
+  		
+			<ion-nav-bar class="bar-dark">
+				  <ion-nav-buttons side="left">
+   						<button menu-toggle="left" class="button button-clear button-icon icon ion-navicon">
+   						</button>
+  </ion-nav-buttons>
+				<!--返回按钮-->
+				<ion-nav-back-button>
+				
+				</ion-nav-back-button>
+					
+			</ion-nav-bar>
+			<!--设置容器-->
+			<ion-nav-view>
+				
+			</ion-nav-view>
+			
+			<!--设置底部-->
+			
+			<ion-tabs class="tabs-icon-top tabs-positive" >
+				<ion-tab title="首页" icon="ion-home" href="#/home">
+					<ion-nav-view name="home"></ion-nav-view>
+				</ion-tab>
+				<ion-tab title="发现" icon="ion-star" href="#/find">
+					<ion-nav-view name="find"></ion-nav-view>
+				</ion-tab>
+				<ion-tab title="我的" icon="ion-ios-world" href="#/my">
+					
+					<ion-nav-view name="my"></ion-nav-view>
+				</ion-tab>
+			</ion-tabs>
+		
+  	</ion-side-menu-content>
+  
+  </ion-side-menus>
+  
+  
+  
+  
+  	
+			
+    
+  </body>
+</html>

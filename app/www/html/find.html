@@ -1,0 +1,10 @@
+<ion-view view-title="发现">
+	<ion-content>
+		<ion-list>
+			<ion-item ng-repeat="(index,item) in youji" href="#/find/{{$index}}">
+				<h2 style="white-space: normal;">{{youji[index].title}}</h2>
+				<img src="{{youji[index].img}}" style="width: 100%;height: 200px;margin: 0 auto;"/>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

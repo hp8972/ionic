@@ -1,0 +1,14 @@
+<ion-view view-title="夏威夷">
+	<ion-content>
+		<img src="{{img1}}" style="width: 100%;margin-top: 10px;"/>
+		<div>
+			<p ng-repeat="item1 in arr1" style="text-align: center;font-size: 12px;">{{item1}}</p>
+		</div>
+		<ul>
+			<li ng-repeat="item2 in arr2">		
+				<p style="text-align: center;">{{item2.con}}</p>
+				<img src="{{item2.img}}" style="width: 100%;"/>
+			</li>
+		</ul>
+	</ion-content>
+</ion-view>
